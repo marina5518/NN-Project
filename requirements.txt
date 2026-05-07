@@ -1,6 +1,6 @@
-streamlit
+streamlit>=1.35.0
 tensorflow
-numpy
+numpy>=1.26.0
 pillow
 matplotlib
 plotly
