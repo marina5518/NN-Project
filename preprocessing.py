@@ -11,8 +11,6 @@ def preprocess_image(image):
 
     image = np.array(image)
 
-    image = image / 255.0
-
     image = np.expand_dims(image, axis=0)
 
     return image
