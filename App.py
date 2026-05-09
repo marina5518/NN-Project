@@ -294,7 +294,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption="", use_container_width=True)
 
-    processed_image = preprocess_image(image)
+    processed_image = preprocess_image(image, model_name=selected_model_internal)
 
     if st.button("▶  RUN CLASSIFICATION"):
         with st.spinner("Analyzing image…"):
